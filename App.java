@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class App {
     public static void main(final String[] args) throws Exception {
         final int[] numeros = { 8, 8, 8, 8, 8, 9, 9, 10, 11, 11, 11, 11, 11, 11, 11, 11, 22, 42, 44, 53, 55, 64, 69, 71,
@@ -28,7 +26,6 @@ public class App {
         int primeCounter = 1;
         int secCounter = 1;
         int relay = -1;
-        // List<Integer> modas = new ArrayList<Integer>();
         for (int i = 0; i < array.length - 2; i++) {
             prime = (primeCounter < secCounter) ? sec : prime;
             if (secCounter > primeCounter) {
