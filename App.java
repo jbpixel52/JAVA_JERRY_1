@@ -1,8 +1,7 @@
 public class App {
-    //boo!
+    // boo!
     public static void main(String[] args) throws Exception {
-        int[] numeros = { 1, 3, 4, 5, 8, 8, 8, 8, 8, 9, 10, 11, 11, 11, 22, 42, 44, 53, 55, 62, 63, 63, 63, 63, 63, 63,
-                69, 71, 81, 98, 99, 101, 169 };
+        int[] numeros = { 1,1,1,1,2,2,3,3,3,3,3,3,3,5,5,5,5,5,5,10,11,12,12,12};
         // System.out.println(search(numeros, 69));
         mode(numeros, 1, 0);
     }
@@ -13,7 +12,6 @@ public class App {
             counter += 1;
             if (i == toBeSearched) {
                 System.out.println(toBeSearched + " at " + counter);
-                answer = 1;
                 break;
             }
         }
@@ -23,13 +21,18 @@ public class App {
 
     public static void mode(int[] array, int initCounter, int initIndex) {
         int counter = initCounter;
+        int contra = 1;
         int i = initIndex;
-        for (int j = 0; j < array.length - 2; j++) {
-            if ((array[j] == array[j + 1])) {
-                counter += 1;
-            } else {
-                System.out.println(j + " x" + counter);
-                counter = 1;
+
+        for (int j = i; j < array.length; j++) {
+            if (array[j] == array[j+1]) {
+                counter++;
+                
+            }
+            if(j>0 && array[j] != array[j-1]){
+                //aqui es cuando termina la repeticion
+
+                System.out.println(array[j]);
             }
         }
     }
