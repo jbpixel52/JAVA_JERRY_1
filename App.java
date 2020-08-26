@@ -3,7 +3,7 @@ import java.util.*;
 public class App {
     // boo!
     public static void main(String[] args) throws Exception {
-        int[] numeros = { 1,1,1,1,2,2,3,3,3,3,3,3,3,5,5,5,5,5,5,10,11,12,12,12};
+        int[] numeros = { 1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 5, 10, 11, 12, 12, 12 };
         // System.out.println(search(numeros, 69));
         mode(numeros, 1, 0);
     }
@@ -67,4 +67,7 @@ public class App {
             }
         }
     }
+ }
+}
+ 
 }
