@@ -24,6 +24,7 @@ public class App {
     public static void mode(final int[] array) throws Exception {
         int prime = 0;
         int sec = 0;
+        int counter = 0;
         int primeCounter = 1;
         int secCounter = 1;
         int relay = -1;
